@@ -5,9 +5,8 @@
 #include <stdio.h>
 
 /**
- * main - this is the function name
-
- * Return: determine whether output is positive , negative or zero 
+ * main -  determine whether output is positive, negative or zero
+ * Return: Always 0 (Success) 
  */
 int main(void)
 {
