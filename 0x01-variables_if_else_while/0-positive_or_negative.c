@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 /**
- * main -  determine whether output is positive, negative or zero
+ * main - determine whether output is positive, negative or zero
  * Return: Always 0 (Success) 
  */
 int main(void)
