@@ -6,12 +6,9 @@
 
 /**
  * main - this is the function name
- * @nb: The number to be checked
- * 
- * Return: determine whether output is positive , negative or zero
- * 
- */
 
+ * Return: determine whether output is positive , negative or zero 
+ */
 int main(void)
 {
 	int n;
