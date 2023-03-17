@@ -5,7 +5,8 @@
 #include <stdio.h>
 
 /**
- * main -Determine +ve, -ve or 0
+ * main - this is the function name
+ * description - determine whether output is positive , negative or zero
  */
 
 int main(void)
