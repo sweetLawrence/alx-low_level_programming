@@ -1,12 +1,10 @@
 #include <stdlib.h>
-
 #include <time.h>
-
 #include <stdio.h>
 
 /**
- * main - determine whether output is positive , negative or zero
- * Return: Always 0 (Successful) 
+ * main - determine if output is positive, negative or zero
+ * Return: Always 0 (Successful)
  */
 int main(void)
 {
