@@ -1,8 +1,8 @@
-i#include "main.h"
+#include "main.h"
 /**
- * _strspn - function to check;
+ * _strspn - function to check
  * @s: string input
- * @accept: string to be checked;
+ * @accept: string to be checked
  * Return: counted occurences
  */
 unsigned int _strspn(char *s, char *accept)
