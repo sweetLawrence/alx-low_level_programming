@@ -1,45 +1,43 @@
 #include "main.h"
-
 #include <stdlib.h>
 
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
+ * str_concat - concatenates two strings.
+ * @s1: first string.
+ * @s2: second string.
  *
- * @s2: input two to concatenate
- *
- * Return: concat of s1 and s2
- *	
+ * Return: pointer of an array of chars
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char *conct;
-	int i, cnt;
+	char *strout;
+	unsigned int i, j, k, limit;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-		i = cnt = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[cnt] != '\0')
-		cnt++;
-	conct = malloc(sizeof(char) * (i + cnt + 1));
-	if (conct == NULL)
+
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+
+	for (j = 0; s2[j] != '\0'; j++)
+		;
+
+	strout = malloc(sizeof(char) * (i + j + 1));
+
+	if (strout == NULL)
+	{
+		free(strout);
 		return (NULL);
-	i = cnt = 0;
-	while (s1[i] != '\0')
-	{
-		conct[i] = s1[i];
-		i++;
 	}
-	while (s2[cnt] != '\0')
-	{
-		conct[i] = s2[cnt];
-		i++, cnt++;
-	}
-	conct[i] = '\0';
-	return (conct);
+
+	for (k = 0; k < i; k++)
+		strout[k] = s1[k];
+
+	limit = j;
+	for (j = 0; j <= limit; k++, j++)
+		strout[k] = s2[j];
+
+	return (strout);
 }
