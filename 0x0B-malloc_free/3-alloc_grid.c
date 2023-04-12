@@ -1,5 +1,4 @@
 #include "main.h"
-		
 #include <stdlib.h>
 
 /**
@@ -37,6 +36,5 @@ int **alloc_grid(int width, int height)
 		for (y = 0; y < width; y++)
 			m_lock[x][y] = 0;
 	}
-    return (m_lock);
-
+	return (m_lock);
 }
